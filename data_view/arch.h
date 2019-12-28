@@ -26,17 +26,9 @@
 #elif defined(__aarch64__) || defined(_M_ARM64)
 #define ARCH_CPU_LITTLE_ENDIAN 1
 #elif defined(__MIPSEL__)
-#if defined(__LP64__)
 #define ARCH_CPU_LITTLE_ENDIAN 1
-#else
-#define ARCH_CPU_LITTLE_ENDIAN 1
-#endif
 #elif defined(__MIPSEB__)
-#if defined(__LP64__)
 #define ARCH_CPU_BIG_ENDIAN 1
-#else
-#define ARCH_CPU_BIG_ENDIAN 1
-#endif
 #else
 #error Please add support for your architecture
 #endif
