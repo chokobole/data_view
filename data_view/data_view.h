@@ -178,7 +178,7 @@ inline void ReadBigEndian(const char* buf, T* out) {
 
 template <typename T>
 inline void WriteBigEndian(char* buf, T val) {
-  memcpy(out, static_cast<const T*>(&val), sizeof(T));
+  memcpy(buf, static_cast<const T*>(&val), sizeof(T));
 }
 
 #endif
